@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHATCOUNTRYIS</title>
+</head>
+<body>
+    <h1>Qual é o seu Pais</h1>
+
+    O seu pais é: <input type="string" name="txtpais" id="txtpais"> 
+    <input type="button" value="verificar" onclick="calcular()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular() {
+            var txtv = window.document.querySelector(`input#txtpais`)
+            var res = window.document.querySelector(`div#res`)
+            var pais = (txtv.value)
+            res.innerHTML = `<p> O seu Pais é <strong>${pais}</strong></p>`
+            if (pais != `portugal`) 
+            res.innerHTML += `<p>Você é estrangeiro!</p>`
+            else res.innerHTML += `<p>Você é portugues!</p>`
+
+        }
+
+
+    </script>
+</body>
+</html>
