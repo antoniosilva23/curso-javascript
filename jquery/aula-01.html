@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi magni neque ipsam, cupiditate accusamus asperiores quidem inventore quod, distinctio, perspiciatis facere alias aliquam qui impedit saepe? Cupiditate vero dolore itaque!</p>
+
+    <p id="teste">Isso é um paragrafo de teste.</p>
+    <p class="p-yellow">Outro paragrafo</p>
+    <div class="p-yellow">Texto dentro de uma div</div>
+    <hr>
+
+    <button id="botao" style="padding:50px;">Clique aqui</button>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+
+
+
+
+
+    <script>
+        $(document).ready(function(){
+            $(`#teste`).click(function(){
+                $(this).html(`Mudei quando fui clicado`)
+            })
+
+            $(`#botao`).click(function(){
+                alert(`Clicou no botão!`)
+            })
+            
+            $(`#botao`).mouseenter(function(){
+                $(`#botao`).html(`mouse enter`);
+            })
+
+            $(`#botao`).mouseleave(function(){
+                $(`#botao`).html(`mouse leave`);
+            })
+
+        })
+    </script>
+</body>
+</html>
