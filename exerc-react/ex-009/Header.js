@@ -12,6 +12,7 @@ function Header() {
                     <li>Pricing</li> 
                     <li>About</li>
                     <li>Contact</li> 
+                    
                 </ul>
             
             </nav>
